@@ -17,7 +17,8 @@ const winPatterns = [
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        if (box.textContent !== "" || winnerMsg.textContent !== "") return;
+        if (box.textContent !== "" || winnerMsg.textContent !== "") 
+            return;
 
         box.textContent = turnX ? "X" : "O";
 
@@ -70,4 +71,5 @@ function resetGame() {
 }
 
 resetBtn.addEventListener("click", resetGame);
+
 
